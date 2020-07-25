@@ -3,11 +3,10 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
         //D:/TERAMEDIA/...
-        String folderPath = "d:/TERAMEDIA/SKILLBOX";
+        String folderPath = "D:/TERAMEDIA/CLIPARTS";
         File file = new File(folderPath);
-        System.out.println(file.length());
+        System.out.println(getFoldersSize(file));
 
-        System.out.println();
 
     }
 
