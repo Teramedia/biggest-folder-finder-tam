@@ -1,13 +1,16 @@
 import java.io.File;
+import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
         //D:/TERAMEDIA/...
         String folderPath = "D:/TERAMEDIA/CLIPARTS";
         File file = new File(folderPath);
+
+        long start = System.currentTimeMillis();
         System.out.println(getFoldersSize(file));
-
-
+        long duration = (System.currentTimeMillis() - start)/1000;
+        System.out.println(duration + "seconds");
     }
 
     public static long getFoldersSize(File folder) {
